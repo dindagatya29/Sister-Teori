@@ -1,0 +1,44 @@
+DINDA GATYA RABBANI
+TRPL 3B 
+2111082012
+SISTEM TERDISTRIBUSI
+
+
+Penamaan dalam sistem terdistribusi sangat penting untuk mengidentifikasi entitas seperti proses, objek jarak jauh (remote), dan newsgroups. Ada tiga jenis referensi yang digunakan untuk mengenali entitas tersebut, yaitu Nama, Alamat, dan Pengenal.
+
+1. Nama, Alamat, dan Pengenal:
+a) Nama:
+
+Nama adalah kumpulan bit atau karakter yang merujuk pada suatu entitas.
+Nama dapat bersifat ramah manusia atau tidak.
+b) Alamat:
+
+Setiap entitas terletak pada titik akses dengan alamat.
+Alamat dapat bersifat tergantung lokasi atau tidak, seperti alamat IP dan port.
+c) Pengenal:
+
+Identifier adalah nama yang secara unik mengidentifikasi entitas.
+Suatu identifier sejati memiliki properti bahwa setiap entitas dirujuk oleh satu identifier, dan setiap identifier merujuk pada satu entitas tanpa penggunaan ulang.
+2. Sistem Penamaan:
+Sistem penamaan adalah middleware yang membantu dalam resolusi nama.
+Dibagi menjadi tiga kelas berdasarkan cara pemberian nama:
+a) Penamaan Flat:
+Identifiers adalah string bit acak.
+Mekanisme resolusi termasuk broadcasting, forwarding pointers, pendekatan berbasis home, dan Distributed Hash Tables (DHTs) seperti Chord.
+b) Penamaan Terstruktur:
+Nama terstruktur tersusun dari nama-nama sederhana yang mudah dibaca.
+Contoh termasuk sistem berbasis file dan akses ke situs web.
+Ruang Nama:
+Nama terstruktur diorganisir dalam ruang nama (name spaces).
+Terdiri dari node daun dan node direktori.
+Resolusi Nama:
+Proses pencarian nama disebut resolusi.
+Closure mekanisme memilih konteks implisit dari mana memulai resolusi nama.
+Pengaitan Nama:
+Ruang nama dapat digunakan untuk mengaitkan dua entitas berbeda.
+Jenis link melibatkan hard links dan symbolic links.
+c) Penamaan Berbasis Atribut:
+Menamai dan mencari entitas berdasarkan atributnya.
+Mirip dengan layanan direktori tradisional, seperti Yellow Pages.
+Solusi mencakup implementasi LDAP (Light-weight Directory Access Protocol).
+Penting untuk memilih sistem penamaan yang sesuai dengan kebutuhan spesifik sistem terdistribusi dan mempertimbangkan kejelasan, konsistensi, dan skalabilitas dalam proses penamaan.

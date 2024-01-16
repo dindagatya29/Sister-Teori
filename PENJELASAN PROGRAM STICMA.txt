@@ -1,0 +1,37 @@
+DINDA GATYA RABBANI
+TRPL 3B 
+2111082012
+SISTEM TERDISTRIBUSI
+
+
+Program StaticHuffmanCompression adalah implementasi kompresi dan dekompresi data menggunakan Java dengan format kompresi GZIP (Gnu Zipped File). Berikut adalah penjelasan metode dan struktur utama program:
+
+Metode compressData:
+Metode ini menerima data dalam bentuk array byte (byte[] data).
+Membuat ByteArrayOutputStream untuk menampung data yang akan dikompresi.
+Membungkus ByteArrayOutputStream dalam GZIPOutputStream.
+Menulis data ke GZIPOutputStream, yang akan mengkompresi data.
+Mengembalikan data yang sudah dikompresi sebagai array byte.
+
+Metode decompressData:
+Metode ini menerima data yang sudah dikompresi dalam bentuk array byte (byte[] compressedData).
+Membuat ByteArrayInputStream dari data yang sudah dikompresi.
+Membuat ByteArrayOutputStream untuk menampung data yang sudah didekompresi.
+Membungkus ByteArrayInputStream dalam GZIPInputStream untuk dekompresi.
+Membaca data dari GZIPInputStream, men-dekompresinya, dan menulisnya ke ByteArrayOutputStream.
+Mengembalikan data yang sudah didekompresi sebagai array byte.
+
+Metode main:
+Berisikan data teks yang ingin dikompresi, didefinisikan sebagai string (originalData).
+Data string dikonversi menjadi array byte (dataBytes) menggunakan metode getBytes().
+Data tersebut dikompresi dengan memanggil compressData, dan hasilnya dicetak ke layar sebagai string.
+Data yang sudah dikompresi didekompresi dengan memanggil decompressData, dan hasil dekompresi dicetak ke layar.
+
+Try-Catch:
+Program menggunakan blok try-catch untuk menangani pengecualian yang mungkin muncul saat mengompresi atau mendekompresi data.
+Jika terjadi kesalahan, pengecualian akan ditangkap, dan pesan kesalahan akan dicetak ke layar.
+Penggunaan kelas-kelas GZIPOutputStream dan GZIPInputStream:
+Program ini mengilustrasikan cara menggunakan kompresi GZIP dalam Java untuk mengurangi ukuran data yang akan disimpan atau dikirim melalui jaringan.
+Berguna terutama saat perlu mengompresi data sebelum menyimpannya di disk atau mengirimnya melalui jaringan untuk menghemat bandwidth.
+Menggunakan array byte untuk menyimpan dan memanipulasi data dalam bentuk biner.
+Program ini memanfaatkan fitur-fitur Java yang telah disediakan untuk melakukan kompresi dan dekompresi data dengan mudah menggunakan format GZIP.
